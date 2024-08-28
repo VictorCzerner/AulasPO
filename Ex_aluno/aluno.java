@@ -17,9 +17,9 @@ public LocalDate getData(){return dataValidade;}
 
 public void setMatricula(int Matricula){this.Matricula=Matricula;}
 public void setNome(String Nome){this.Nome=Nome;}
-public void setData(LocalDate dataValidade){this.dataValidade=dataValidade;;}
+public void setData(LocalDate dataValidade){this.dataValidade=dataValidade;}
 
 @Override
-public String toString(){return "nome do aluno: "+Nome+ " matricula do aluno: "+Matricula+ " Data de nascimento do aluno: "+dataValidade;}
+public String toString(){return Nome+ ", "+Matricula+ ", "+dataValidade;}
 
 }
