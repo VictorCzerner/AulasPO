@@ -1,4 +1,4 @@
-public abstract class Cliente{
+public abstract class Cliente implements Mensuravel{
     private String Nome;
 
     public Cliente(String Nome)
@@ -10,4 +10,6 @@ public abstract class Cliente{
     
     @Override
     public String toString(){return Nome;}
+
+    
 }

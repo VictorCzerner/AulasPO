@@ -1,4 +1,4 @@
-public class ClienteJuridico extends Cliente{
+public class ClienteJuridico extends Cliente implements  Mensuravel{
     private double Mensalidade;
 
     public ClienteJuridico(String Nome, double Mensalidade) {
@@ -13,4 +13,11 @@ public class ClienteJuridico extends Cliente{
    
    @Override
     public String toString(){return super.toString()+ ", R$"+ getMensalidade();}
+
+    @Override
+    public double getValor() {
+        return Mensalidade;
+    }
+
+    
 }

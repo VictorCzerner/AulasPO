@@ -20,5 +20,14 @@ public void Lista(){
         }
 }
 
+public int size(){
+    int size=0;
+    for (int i = 0; i < CadastroCli.size(); i++) {
+            size++;
+        }
+    return size;
+}
+
+public Cliente get(int i){return CadastroCli.get(i);}
 
 }

@@ -1,4 +1,4 @@
-public class ClienteFisico extends Cliente{
+public class ClienteFisico extends Cliente implements Mensuravel{
     private int Idade;
     private double Salario;
 
@@ -22,4 +22,10 @@ public class ClienteFisico extends Cliente{
 
     @Override
     public String toString(){return super.toString()+ ", R$"+ getMensalidade();}
+
+    @Override
+    public double getValor() {
+        return getMensalidade();
+    }
+
 }
