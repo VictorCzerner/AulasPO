@@ -1,6 +1,7 @@
 
 public class App {
     public static void main(String[] args) {
+        System.out.println("oi");
         Fila teste = new Fila();
         Cliente cli1 = new Cliente(72, "Cleber", false);
         Cliente cli2 = new Cliente(52, "Joao", false);
