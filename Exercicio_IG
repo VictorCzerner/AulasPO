@@ -1,0 +1,67 @@
+public class exercicio{
+    public static void main{
+        JFrame frame = new JFrame("Exemplo - menus");
+        frame.setSize(400, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JMenu fileMenu = new JMenu("Arquivo");
+        fileMenu.add(new JMenuItem("Abrir texto"));
+        fileMenu.add(new JMenuItem("Abrir binário"));
+        fileMenu.add(new JMenuItem("Abrir json"));
+        fileMenu.addSeparator();
+        fileMenu.add(new JMenuItem("Salvar texto"));
+        fileMenu.add(new JMenuItem("Salvar binário"));
+        fileMenu.add(new JMenuItem("Salvar json"));
+        
+        JMenu editMenu = new JMenu("Ajuda");
+        JMenuBar menubar = new JMenuBar(); 
+        menubar.add(fileMenu);
+        menubar.add(editMenu);
+        
+        frame.setJMenuBar(menubar);
+        frame.setVisible(true);
+
+        
+        JFrame frame = new JFrame("exercicio - swing");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel linha1 = new JPanel(new FlowLayout(FlowLayout.LEADING));
+
+
+        JLabel lb1 = new JLabel("Detalhes do funcionario");
+        JLabel lb2 = new JLabel("id: ");
+        JTextField tf1= new JTextField(20);
+        linha1.add(lb1);
+        linha1.add(lb2);
+        linha1.add(tf1);
+        JLabel lb3 = new JLabel("Nome: ");
+        JTextField tf2 = new JTextField(20);
+        linha1.add(lb3);
+        linha1.add(tf2);
+        JLabel lb4 = new JLabel("Status");
+        JRadioButton rb1 = new JRadioButton("inativo");
+        JRadioButton rb2 = new JRadioButton("ativo");
+        linha1.add(lb4);
+        linha1.add(rb1);
+        linha1.add(rb2);
+
+        JLabel lb5 = new JLabel("departamento");
+        ButtonGroup group = new ButtonGroup(); 
+        JRadioButton dep = new JRadioButton("Vendas");
+        JRadioButton dep1 = new JRadioButton("estoque");
+        group.add(dep);
+        group.add(dep1);
+        linha1.add(lb5);
+        linha1.add(group);
+
+        JLabel lb6 = new JLabel("salario: ");
+        JTextField tf3= new JTextField(20);
+        linha1.add(lb6);
+        linha1.add(tf3);
+
+        JButton button = new JButton("limpar");
+        JButton button1 = new JButton("salvar");
+        linha1.add(button);
+        linha1.add(button1);
+
+
+    }
+}
