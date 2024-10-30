@@ -27,6 +27,7 @@ public class exercicio{
 
 
         JLabel lb1 = new JLabel("Detalhes do funcionario");
+        JPanel 
         JLabel lb2 = new JLabel("id: ");
         JTextField tf1= new JTextField(20);
         linha1.add(lb1);
